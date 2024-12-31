@@ -1,0 +1,122 @@
+
+#root {
+  font-size: 16px;
+  max-width: 1280px;
+  margin: 0;
+  padding: 2rem;
+  /* text-align: center; */
+}
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #282c34; 
+  color: white;
+} 
+
+/* .App {
+  text-align: center;
+} */
+
+/* Header Section */
+.Header {
+  display: flex;
+  justify-content: space-between; /* Pushes logo to the left and menu to the right */
+  align-items: center; /* Vertically centers the items */
+  position: absolute; /* Position header at the top of the page */
+  top: 0;
+  left: 0;
+  width: 100%; /* Make the header span the full width */
+  padding: 10px 20px; /* Add space around the logo and menu */
+  z-index: 10; /* Ensure it stays above other elements */
+}
+
+.logo {
+  height: 6em; /* Adjust logo size */
+  margin-left: 20px; /* Add space from the left edge */
+}
+
+.menu {
+  height: 6em; /* Adjust menu icon size */
+  margin-right: 40px; /* Extra space on the right */
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.menu {
+  height: 6em;
+  padding: 2em;
+}
+
+
+.Main {
+  padding: 50px 20px;
+  text-align: left;
+}
+
+.Main h1 {
+  font-size: 6rem;
+  font-weight: bold;
+  margin: 0 0 20px;
+}
+.Main p{
+  font-size: 1.5rem;
+  line-height: 1.6;
+  margin: 20px auto;
+  max-width: 600px;
+  /* max-width: 600px;  */
+}
+
+.Main button {
+  background-color: #61dafb; /* React blue */
+  color: #282c34; /* Dark text */
+  border: none;
+  padding: 15px 30px;
+  font-size: 2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.Main button:hover {
+  background-color: #21a1f1; /* Slightly darker blue on hover */
+}
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('path-to-react-background-graphic.png'); /* Add background image if available */
+  opacity: 0.1;
+  z-index: -1; /* Ensure it stays in the background */
+  pointer-events: none; /* Ignore interactions */
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
